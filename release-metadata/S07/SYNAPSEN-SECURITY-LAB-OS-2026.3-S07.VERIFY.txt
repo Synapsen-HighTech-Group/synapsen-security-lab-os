@@ -1,0 +1,56 @@
+SYNAPSEN SECURITY LAB OS 2026.3 - S07
+OFFLINE-VERIFIZIERUNG UND VERTRAUENSANKER
+============================================================
+
+Release-Status: FINAL / PASS_CLOSED_SEALED
+ISO-Datei: live-image-amd64.hybrid.iso
+ISO-SHA-256: 92bd8a7cf26d011ff45e7430b741b912a32e175b132a3eee559fa4fb4a4bfc96
+
+OpenPGP-Hauptschluessel (Ed25519, Zertifizierung):
+67328AC71B4D6D77365E71AE304228C84D338F8E
+Gueltig bis: 2031-08-21 10:47:57 UTC
+
+OpenPGP-Signaturunterschluessel (Ed25519):
+6D47D3B77836B1E51A2B218B5AAFBE7F7212CFF7
+Gueltig bis: 2027-08-22 10:48:00 UTC
+
+Der Hauptfingerabdruck muss vor der ersten Vertrauensentscheidung ueber
+einen unabhaengigen Kanal verglichen werden. Ein Dateiname allein ist kein
+Vertrauensnachweis.
+
+MINDESTPRUEFUNG
+------------------------------------------------------------
+
+1. Signatur des Release-Manifests offline pruefen:
+
+   gpgv --keyring SYNAPSEN-SECURITY-LAB-OS-2026.3-S07.trustedkeys.gpg ^
+     SYNAPSEN-SECURITY-LAB-OS-2026.3-S07.release.json.asc ^
+     SYNAPSEN-SECURITY-LAB-OS-2026.3-S07.release.json
+
+2. Vollstaendige fail-closed-Pruefung mit dem SYNAPSEN-Controller:
+
+   pwsh -NoProfile -File <WORKSPACE>\controller\S07\cli\synapsen-verify-release.ps1 ^
+     -Manifest SYNAPSEN-SECURITY-LAB-OS-2026.3-S07.release.json ^
+     -Artifact live-image-amd64.hybrid.iso ^
+     -Signature SYNAPSEN-SECURITY-LAB-OS-2026.3-S07.release.json.asc ^
+     -TrustedKeyring SYNAPSEN-SECURITY-LAB-OS-2026.3-S07.trustedkeys.gpg ^
+     -RequireSignature
+
+Die Vollpruefung bindet Signatur, ISO-Hash und -Groesse, Build-Provenienz,
+kanonische SPDX-3.0.1-SBOM sowie das M1-Abnahmesiegel. Fehlende, manipulierte,
+abgelaufene, widerrufene, herabgestufte oder wiederholte Eingaben werden
+ohne Ausnahme blockiert.
+
+VEROEFFENTLICHUNGSARTEFAKTE
+------------------------------------------------------------
+
+- SYNAPSEN-SECURITY-LAB-OS-2026.3-S07.release.json
+- SYNAPSEN-SECURITY-LAB-OS-2026.3-S07.release.json.asc
+- SYNAPSEN-SECURITY-LAB-OS-2026.3-S07.release-signing-key.asc
+- SYNAPSEN-SECURITY-LAB-OS-2026.3-S07.trustedkeys.gpg
+- SYNAPSEN-SECURITY-LAB-OS-2026.3-S07.provenance.json
+- SYNAPSEN-SECURITY-LAB-OS-2026.3-S07.spdx.json
+- SYNAPSEN-SECURITY-LAB-OS-2026.3-S07.M1.acceptance-seal.json
+- SYNAPSEN-SECURITY-LAB-OS-2026.3-S07.SHA256SUMS
+
+Sicherheitsregel: Bei jeder Abweichung nicht starten und nicht freigeben.

@@ -1,0 +1,22 @@
+{
+  "schema": "synapsen.sslios.public-source-snapshot.v1",
+  "source_sample_sha256": "524b71012e01c1ed8384bba088bcbea8e0ea69fbef687e158a3833cf1a59fe57",
+  "first_party_files_included": [
+    "controller/S07/README.md",
+    "controller/S07/cli/synapsen-verify-release.ps1",
+    "controller/S07/evidence/SYNAPSEN.ReleaseEvidence.psm1",
+    "controller/S07/lib/SYNAPSEN.OpenPGP.Interface.psm1",
+    "controller/S07/lib/SYNAPSEN.ReleaseManifest.psm1",
+    "controller/S07/lib/SYNAPSEN.ReleaseVerifier.psm1",
+    "controller/S07/spdx/Invoke-SynapsenSpdx301.ps1",
+    "controller/S07/spdx/New-SynapsenSpdx301Sbom.py",
+    "controller/S07/spdx/Test-SynapsenSpdx301Sbom.py",
+    "controller/S07/tests/S07.AcceptanceMatrix.Framework.ps1",
+    "controller/S07/ui/S07.Verification.ControlCenter.contract.json",
+    "controller/S07/ui/SYNAPSEN.VerificationViewModel.psm1"
+  ],
+  "third_party_runtime_material_included": false,
+  "complete_distribution_source_claimed": false,
+  "iso_included": false,
+  "maturity": "IN DEVELOPMENT"
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "synapsen.sslios.public-source-provenance.v1",
+  "canonical_sample_bundle_sha256": "524b71012e01c1ed8384bba088bcbea8e0ea69fbef687e158a3833cf1a59fe57",
+  "canonical_sample_bundle_size_bytes": 6214613,
+  "source_identity": {
+    "controller_root_role": "authoritative current controller/evidence root",
+    "release_artifact_role": "V24T release-artifact mirror",
+    "acceptance_vm_role": "acceptance/validation environment, not source-of-truth"
+  },
+  "rar_linkage": {
+    "files_compared": 13,
+    "exact_sha256_matches": 13,
+    "conclusion": "The sampled RAR release metadata is byte-identical to the V24T artifact mirror for all 13 compared files."
+  },
+  "scope_limit": "The sample did not include the complete distribution build workspace, design master current tree, or every historical stage. Public source disclosure is therefore intentionally partial.",
+  "provenance_revision_caveat": {
+    "final_artifact_revision": "V24T-BRANDING-R1",
+    "provenance_json_candidate_revision": "V24P-BRANDING-R1",
+    "source_candidate_revision": "V24N-XFCE-R2",
+    "branding_contract": "V24O-R4",
+    "interpretation": "The release artifact is identified by sealed promotion/evidence as V24T-BRANDING-R1. The published provenance file retains an earlier internal candidate_revision label and is preserved unchanged; this naming inconsistency is documented rather than rewritten."
+  }
+}

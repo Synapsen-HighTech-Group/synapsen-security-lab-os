@@ -1,0 +1,42 @@
+{
+  "schema": "synapsen.sslios.public-evidence-summary.v1",
+  "scope": "Public derivative of sealed internal evidence. Original path-bearing evidence is not published.",
+  "release_id": "SYNAPSEN-SECURITY-LAB-OS-2026.3-S07",
+  "release_artifact": {
+    "revision": "V24T-BRANDING-R1",
+    "iso_sha256": "92bd8a7cf26d011ff45e7430b741b912a32e175b132a3eee559fa4fb4a4bfc96",
+    "iso_size_bytes": 5652692992,
+    "release_manifest_sha256": "5570d6ee5e3217038a6d649a17bb1d68ccb58aed6fee82bc4f5881a4666ec805",
+    "signature_sha256": "972230fd01eb3fa6773dd77a2b259ea804b3f1950138b5e5ab373bb6f0446933",
+    "release_sums_sha256": "13873827f11f1a338a27dba871a8ea6c9f51d14fc61b951a2bb1643fc3023911"
+  },
+  "verification": {
+    "branding_items_passed": 14,
+    "spdx_version": "3.0.1",
+    "spdx_packages": 2953,
+    "spdx_canonical": true,
+    "spdx_json_schema": true,
+    "spdx_shacl": true,
+    "acceptance_cases": 16,
+    "acceptance_expectations_met": true,
+    "final_release_chain": true,
+    "fail_closed": true
+  },
+  "trust": {
+    "profile": "OpenPGP Ed25519 detached armored",
+    "primary_fingerprint": "67328AC71B4D6D77365E71AE304228C84D338F8E",
+    "primary_expires_utc": "2031-08-21T10:47:57Z",
+    "signing_subkey_fingerprint": "6D47D3B77836B1E51A2B218B5AAFBE7F7212CFF7",
+    "signing_subkey_expires_utc": "2027-08-22T10:48:00Z",
+    "networkless_ceremony": true
+  },
+  "source_provenance": {
+    "sample_collected_files": 86,
+    "sample_bytes": 9284955,
+    "hard_secret_findings": 0,
+    "soft_privacy_findings_in_private_sample": 7,
+    "rar_v24t_files_compared": 13,
+    "rar_v24t_exact_sha256_matches": 13
+  },
+  "original_evidence_scope_note": "The internal S07 release chain is sealed, but the broader public project is presented as IN DEVELOPMENT. This repository does not claim full source-to-ISO reproducibility."
+}

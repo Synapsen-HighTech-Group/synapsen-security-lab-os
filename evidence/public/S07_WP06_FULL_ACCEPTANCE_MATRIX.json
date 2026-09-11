@@ -1,0 +1,144 @@
+{
+  "schema": "synapsen.s07.wp06.full-acceptance-matrix.v1",
+  "revision": "V24T-WP06-R1",
+  "timestamp": "2026-08-22T13:04:54.0978072+02:00",
+  "state": "PASS_CLOSED_SEALED",
+  "case_count": 16,
+  "pass_expectation_count": 1,
+  "fail_expectation_count": 15,
+  "all_expectations_met": true,
+  "cli_offline_verifier": "PASS",
+  "gui_view_model": "PASS",
+  "primary_fingerprint": "67328AC71B4D6D77365E71AE304228C84D338F8E",
+  "signing_subkey_fingerprint": "6D47D3B77836B1E51A2B218B5AAFBE7F7212CFF7",
+  "cases": [
+    {
+      "id": "S07-T01",
+      "case": "VALID_RELEASE_CHAIN",
+      "expected": "PASS",
+      "actual": "PASS",
+      "reason": "PASS",
+      "fail_closed": true
+    },
+    {
+      "id": "S07-T02",
+      "case": "TAMPERED_ARTIFACT",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reason": "RELEASE_CHAIN_FAIL",
+      "fail_closed": true
+    },
+    {
+      "id": "S07-T03",
+      "case": "TAMPERED_MANIFEST",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reason": "RELEASE_CHAIN_FAIL",
+      "fail_closed": true
+    },
+    {
+      "id": "S07-T04",
+      "case": "TAMPERED_SIGNATURE",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reason": "RELEASE_CHAIN_FAIL",
+      "fail_closed": true
+    },
+    {
+      "id": "S07-T05",
+      "case": "WRONG_UNTRUSTED_KEY",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reason": "RELEASE_CHAIN_FAIL",
+      "fail_closed": true
+    },
+    {
+      "id": "S07-T06",
+      "case": "MISSING_PROVENANCE",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reason": "RELEASE_CHAIN_FAIL",
+      "fail_closed": true
+    },
+    {
+      "id": "S07-T07",
+      "case": "MISSING_SBOM",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reason": "RELEASE_CHAIN_FAIL",
+      "fail_closed": true
+    },
+    {
+      "id": "S07-T08",
+      "case": "MISSING_M1_SEAL",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reason": "RELEASE_CHAIN_FAIL",
+      "fail_closed": true
+    },
+    {
+      "id": "S07-T09",
+      "case": "MALFORMED_MANIFEST",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reason": "MANIFEST_REJECTED",
+      "fail_closed": true
+    },
+    {
+      "id": "S07-T10",
+      "case": "REPLAY_RELEASE_ID_MISMATCH",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reason": "MANIFEST_REJECTED",
+      "fail_closed": true
+    },
+    {
+      "id": "S07-T11",
+      "case": "EXPIRED_SIGNING_SUBKEY",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reason": "RELEASE_CHAIN_FAIL",
+      "fail_closed": true
+    },
+    {
+      "id": "S07-T12",
+      "case": "REVOKED_RELEASE_KEY",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reason": "RELEASE_CHAIN_FAIL",
+      "fail_closed": true
+    },
+    {
+      "id": "S07-T13",
+      "case": "MISSING_SIGNATURE",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reason": "RELEASE_CHAIN_FAIL",
+      "fail_closed": true
+    },
+    {
+      "id": "S07-T14",
+      "case": "MISSING_TRUSTED_KEYRING",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reason": "RELEASE_CHAIN_FAIL",
+      "fail_closed": true
+    },
+    {
+      "id": "S07-T15",
+      "case": "MANIFEST_SCHEMA_DOWNGRADE",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reason": "MANIFEST_REJECTED",
+      "fail_closed": true
+    },
+    {
+      "id": "S07-T16",
+      "case": "SBOM_PATH_TRAVERSAL",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reason": "RELEASE_CHAIN_FAIL",
+      "fail_closed": true
+    }
+  ]
+}

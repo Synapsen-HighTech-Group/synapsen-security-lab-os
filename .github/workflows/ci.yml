@@ -1,0 +1,35 @@
+name: SSLOS Public Evidence CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify public evidence bindings
+        run: python scripts/verify_public_repo.py
+      - name: Compile first-party Python
+        run: |
+          python -m py_compile controller/S07/spdx/New-SynapsenSpdx301Sbom.py
+          python -m py_compile controller/S07/spdx/Test-SynapsenSpdx301Sbom.py
+          python -m py_compile scripts/verify_public_repo.py
+      - name: Parse public PowerShell source
+        shell: pwsh
+        run: |
+          $errorsFound = @()
+          Get-ChildItem -Recurse -File | Where-Object { $_.Extension -in @('.ps1','.psm1') } | ForEach-Object {
+            $tokens = $null
+            $errors = $null
+            [System.Management.Automation.Language.Parser]::ParseFile($_.FullName,[ref]$tokens,[ref]$errors) | Out-Null
+            if (@($errors).Count -gt 0) { $errorsFound += $_.FullName }
+          }
+          if ($errorsFound.Count -gt 0) {
+            $errorsFound | ForEach-Object { Write-Error $_ }
+            exit 1
+          }

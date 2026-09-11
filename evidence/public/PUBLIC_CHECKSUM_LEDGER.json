@@ -1,0 +1,21 @@
+{
+  "schema": "synapsen.sslios.public-checksum-ledger.v1",
+  "release_id": "SYNAPSEN-SECURITY-LAB-OS-2026.3-S07",
+  "artifact_not_embedded": true,
+  "iso": {
+    "sha256": "92bd8a7cf26d011ff45e7430b741b912a32e175b132a3eee559fa4fb4a4bfc96",
+    "size_bytes": 5652692992
+  },
+  "published_metadata": {
+    "release_json_sha256": "5570d6ee5e3217038a6d649a17bb1d68ccb58aed6fee82bc4f5881a4666ec805",
+    "release_signature_sha256": "972230fd01eb3fa6773dd77a2b259ea804b3f1950138b5e5ab373bb6f0446933",
+    "provenance_sha256": "021d0fa088ece4a2b99f50ce8aa4caff31ea09e48f19786eeaa410da74252e55",
+    "sbom_sha256": "6dfdb4f97a6fdb72a03d868ba77abc4a8f8617484de192fd88fe0cdadb0cae9c",
+    "package_inventory_sha256": "11549f523cfd7435b0461ca406056edaeb98615c79ca11e90bed6133fa87f379",
+    "verify_txt_sha256": "dc5c22da30d3520e8d4d7d8443d65a4e211bff3c7261300ff320fb2f78200203"
+  },
+  "referenced_private_evidence": {
+    "m1_acceptance_seal_sha256": "3e4ea33d2d407aeb6a94b7670aef3c5a0b18c6281b88c28720553a11f9638762",
+    "note": "Original M1 seal contains local path evidence and is intentionally not published."
+  }
+}

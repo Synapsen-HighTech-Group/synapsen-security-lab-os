@@ -1,0 +1,27 @@
+{
+  "schema": "synapsen.release.manifest.v1",
+  "release_id": "SYNAPSEN-SECURITY-LAB-OS-2026.3-S07",
+  "artifact": {
+    "path": "live-image-amd64.hybrid.iso",
+    "sha256": "92bd8a7cf26d011ff45e7430b741b912a32e175b132a3eee559fa4fb4a4bfc96",
+    "size_bytes": 5652692992
+  },
+  "evidence": {
+    "m1_seal_sha256": "3e4ea33d2d407aeb6a94b7670aef3c5a0b18c6281b88c28720553a11f9638762",
+    "provenance_sha256": "021d0fa088ece4a2b99f50ce8aa4caff31ea09e48f19786eeaa410da74252e55",
+    "sbom": {
+      "required": true,
+      "path": "SYNAPSEN-SECURITY-LAB-OS-2026.3-S07.spdx.json",
+      "sha256": "6dfdb4f97a6fdb72a03d868ba77abc4a8f8617484de192fd88fe0cdadb0cae9c",
+      "schema_version": "SPDX-3.0.1",
+      "canonical": true,
+      "state": "BOUND"
+    }
+  },
+  "trust": {
+    "signing_fingerprint": "67328AC71B4D6D77365E71AE304228C84D338F8E",
+    "signing_subkey_fingerprint": "6D47D3B77836B1E51A2B218B5AAFBE7F7212CFF7",
+    "signature_profile": "OpenPGP Ed25519 detached armored",
+    "signing_state": "SIGNED_RELEASE"
+  }
+}

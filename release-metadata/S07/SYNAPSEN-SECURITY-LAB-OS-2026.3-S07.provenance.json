@@ -1,0 +1,20 @@
+{
+  "schema": "synapsen.s07.branding-candidate-build-provenance.v1",
+  "architecture": "amd64",
+  "product": "SYNAPSEN SECURITY LAB OS",
+  "candidate_revision": "V24P-BRANDING-R1",
+  "base": "Kali GNU/Linux rolling",
+  "base_version_at_source": "2026.3",
+  "distribution": "kali-rolling",
+  "kali_live_commit": "edc5d1c2f01fea998cbe27ebeabc82cfcfb6e16d",
+  "source_candidate": {
+    "revision": "V24N-XFCE-R2",
+    "sha256": "80293528403a689cf9add4f492a1ed3364cd84faddc2e9af0c2854a4379acd80",
+    "immutable": true
+  },
+  "branding_contract": "V24O-R4",
+  "design_archive_sha256": "5e5b97029604e5315e5a8e885570441736b215758ca17eb0906fbe94113f637a",
+  "design_archive_is_acceptance_evidence": false,
+  "release_signing": "DEFERRED_UNTIL_BRANDING_AND_SPDX_ACCEPTANCE",
+  "key_or_signature_mutation": false
+}

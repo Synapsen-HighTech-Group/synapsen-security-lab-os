@@ -1,0 +1,35 @@
+{
+  "schema": "synapsen.s07.control-center-verification.v1",
+  "language_default": "de-DE",
+  "title": "Release-Verifizierung",
+  "subtitle": "Prueft Signatur, Manifest, Artefakt-Hash, Provenienz und SBOM offline.",
+  "states": [
+    {
+      "id": "READY",
+      "label": "Bereit"
+    },
+    {
+      "id": "VERIFYING",
+      "label": "Pruefung laeuft"
+    },
+    {
+      "id": "PASS",
+      "label": "Vertrauenspfad bestaetigt"
+    },
+    {
+      "id": "FAIL",
+      "label": "Pruefung fehlgeschlagen"
+    },
+    {
+      "id": "BLOCKED",
+      "label": "Freigabe blockiert"
+    }
+  ],
+  "rules": {
+    "shared_verifier_core_required": true,
+    "silent_trust_override_allowed": false,
+    "offline_verification_required": true,
+    "keyboard_access_required": true,
+    "fail_closed": true
+  }
+}
