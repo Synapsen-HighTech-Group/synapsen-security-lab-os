@@ -1,3 +1,26 @@
+<!-- SYNAPSEN_DASHBOARD_INTRO_START -->
+<p align="center"><img src="docs/assets/sslos-github-hero.svg" alt="SYNAPSEN SECURITY LAB OS" width="100%"></p>
+
+<table><tr><td width="50%" valign="top">
+
+### Verified Evidence
+
+`S07` · `V24T-BRANDING-R1` · `SPDX 3.0.1` · `FAIL-CLOSED VERIFIER`
+
+Public evidence includes the release manifest, provenance, SPDX package inventory and acceptance matrix.
+
+</td><td width="50%" valign="top">
+
+### Maturity Boundary
+
+**IN DEVELOPMENT**
+
+No public ISO is claimed. No complete public source-to-ISO rebuild is claimed. Verified release-chain evidence is kept distinct from whole-product maturity.
+
+</td></tr></table>
+
+<!-- SYNAPSEN_DASHBOARD_INTRO_END -->
+
 # SYNAPSEN SECURITY LAB OS
 
 > **Public engineering snapshot — project status: `IN DEVELOPMENT`**  

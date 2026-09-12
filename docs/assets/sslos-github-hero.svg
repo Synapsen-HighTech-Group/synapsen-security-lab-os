@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="460" viewBox="0 0 1600 460" role="img" aria-labelledby="t d">
+<title id="t">SYNAPSEN SECURITY LAB OS</title><desc id="d">Synapsen dark technical hero banner.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070B12"/><stop offset=".6" stop-color="#0A0F1A"/><stop offset="1" stop-color="#0D1B2E"/></linearGradient>
+ <linearGradient id="a" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#7A5FFF"/><stop offset="1" stop-color="#00E5FF"/></linearGradient>
+ <pattern id="g" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#18304B" stroke-width="1" opacity=".28"/></pattern>
+</defs>
+<rect width="1600" height="460" rx="24" fill="url(#bg)"/><rect width="1600" height="460" rx="24" fill="url(#g)"/>
+<circle cx="1330" cy="105" r="180" fill="#7A5FFF" opacity=".08"/><circle cx="1430" cy="320" r="150" fill="#00E5FF" opacity=".05"/>
+<rect x="58" y="44" width="38" height="38" rx="10" fill="#0F1D2D" stroke="#7A5FFF"/><circle cx="77" cy="63" r="8" fill="none" stroke="#00E5FF" stroke-width="2"/><path d="M77 63l8-6" stroke="#00E5FF" stroke-width="2" stroke-linecap="round"/>
+<text x="112" y="70" fill="#F5F7FA" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="700">SYNAPSEN HIGHTECH GROUP</text>
+<text x="58" y="130" fill="#00E5FF" font-family="Consolas,monospace" font-size="15" letter-spacing="3">SECURITY LAB · RELEASE EVIDENCE · S07</text>
+<text x="58" y="215" fill="#F5F7FA" font-family="Segoe UI,Arial,sans-serif" font-size="58" font-weight="800">SYNAPSEN SECURITY LAB OS</text>
+<text x="58" y="275" fill="#8FB8FF" font-family="Segoe UI,Arial,sans-serif" font-size="31" font-weight="700">Security-lab engineering with verified evidence</text>
+<g font-family="Consolas,monospace" font-size="15" font-weight="700">
+ <g transform="translate(58 330)"><rect width="150" height="38" rx="19" fill="#101827" stroke="#284765"/><text x="20" y="25" fill="#DCEBFA">LOCAL-FIRST</text></g>
+ <g transform="translate(222 330)"><rect width="175" height="38" rx="19" fill="#101827" stroke="#284765"/><text x="20" y="25" fill="#DCEBFA">READ-ONLY-FIRST</text></g>
+ <g transform="translate(411 330)"><rect width="175" height="38" rx="19" fill="#101827" stroke="#284765"/><text x="20" y="25" fill="#DCEBFA">EVIDENCE-BACKED</text></g>
+</g>
+<rect x="1085" y="104" width="440" height="250" rx="18" fill="#0B1421" stroke="#1B4F84" stroke-width="2"/>
+<text x="1120" y="150" fill="#00C48C" font-family="Consolas,monospace" font-size="14" font-weight="700">IN DEVELOPMENT</text>
+<text x="1120" y="205" fill="#F5F7FA" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700">Command Center</text>
+<text x="1120" y="240" fill="#9BB0C6" font-family="Segoe UI,Arial,sans-serif" font-size="16">Understand · Document · Verify</text>
+<path d="M1120 295h90l30-45 40 68 44-95 42 72h115" fill="none" stroke="url(#a)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1210" cy="295" r="6" fill="#00E5FF"/><circle cx="1280" cy="318" r="6" fill="#7A5FFF"/><circle cx="1324" cy="223" r="6" fill="#00C48C"/>
+<text x="58" y="420" fill="#5F7E9D" font-family="Consolas,monospace" font-size="13">PEOPLE · SYSTEMS · DOCUMENTATION · BETTER SYSTEMS EVERY DAY</text>
+</svg>
